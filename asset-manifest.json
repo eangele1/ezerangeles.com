@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ezerangeles.com/static/css/main.073c9b0a.css",
+    "main.js": "/ezerangeles.com/static/js/main.a39280d4.js",
+    "static/js/787.ac4ee9fa.chunk.js": "/ezerangeles.com/static/js/787.ac4ee9fa.chunk.js",
+    "static/media/logo.svg": "/ezerangeles.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ezerangeles.com/index.html",
+    "main.073c9b0a.css.map": "/ezerangeles.com/static/css/main.073c9b0a.css.map",
+    "main.a39280d4.js.map": "/ezerangeles.com/static/js/main.a39280d4.js.map",
+    "787.ac4ee9fa.chunk.js.map": "/ezerangeles.com/static/js/787.ac4ee9fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a39280d4.js"
+  ]
+}
