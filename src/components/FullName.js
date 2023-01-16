@@ -5,16 +5,16 @@ import computer from "../data/images/computer.png";
 const FullName = () => {
   return (
     <>
-      <img
-        style={{
-          maxWidth: 400,
-          width: "80vw",
-          alignSelf: "center",
-          paddingTop: "40px",
-        }}
-        src={computer}
-        alt="_Computer"
-      />
+      <center>
+        <img
+          style={{
+            maxWidth: 400,
+            paddingTop: "40px",
+          }}
+          src={computer}
+          alt="_Computer"
+        />
+      </center>
       <motion.div
         initial={{ opacity: 1, y: -200, scale: 0, rotateX: 0 }}
         animate={{ scale: 1, y: 0, rotateX: 1080 }}
