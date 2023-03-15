@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import Stylesheet from "reactjs-stylesheet";
 import { useLocation } from "react-router-dom";
 
+import ContactForm from "../components/ContactForm";
+
 export default function Contact(props) {
   const { pathname } = useLocation();
 
@@ -13,7 +15,7 @@ export default function Contact(props) {
 
   return (
     <div style={styles.container}>
-      <p>contact</p>
+      <ContactForm />
     </div>
   );
 }

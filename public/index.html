@@ -27,23 +27,29 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
       * {
         font-family: "Roboto", sans-serif;
         margin: 0;
       }
 
-      body::-webkit-scrollbar {
+      *::-webkit-scrollbar {
         display: none;
       }
 
       body {
-        background-color: black;
+        /* The image used */
+        background-image: url("bg.png");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: repeat;
+
         /* Hide Scrollbar in IE and Edge */
         -ms-overflow-style: none;
         /* Hide Scrollbar Firefox */
@@ -51,6 +57,9 @@
       }
       .full-name {
         font-family: "Press Start 2P", cursive;
+      }
+      .contact-label {
+        font-family: "Press Start 2P", cursive !important;
       }
     </style>
 

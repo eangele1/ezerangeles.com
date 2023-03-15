@@ -7,6 +7,7 @@ const Home = (props) => {
       <p
         style={{
           fontSize: "40px",
+          textAlign: "center",
         }}
       >
         {props.text}
@@ -17,11 +18,10 @@ const Home = (props) => {
 
 const styles = Stylesheet.create({
   container: {
-    flex: 1,
+    padding: "40px 0px",
     color: "white",
     justifyContent: "center",
     display: "flex",
-    alignItems: "center",
   },
 });
 

@@ -1,0 +1,64 @@
+{
+    "video": [
+      {
+        "title": "UC Merced Video Series",
+        "body": "A univiersity video series in which I outline different aspects of UC Merced.",
+        "image": "https://i3.ytimg.com/vi/EaErpXvYAwk/maxresdefault.jpg",
+        "demoURL": "",
+        "projectURL": "https://www.youtube.com/watch?v=pn18wCTREEw&list=PL_V0P1jtk44txtKkdnFPjHpj4xLyvYUhX"
+      },
+      {
+        "title": "After You Apply Animation",
+        "body": "A university animation with voice over by yours truly.",
+        "image": "https://i3.ytimg.com/vi/8NTTXuPHj5A/maxresdefault.jpg",
+        "demoURL": "",
+        "projectURL": "https://youtu.be/8NTTXuPHj5A?list=PL_V0P1jtk44v04RTUEd_BepJwFJ-kyho1"
+      },
+      {
+        "title": "Freestyle Promo Video 2016",
+        "body": "A high school promotional video that talks about the aspects of Freestyle Academy.",
+        "image": "https://i3.ytimg.com/vi/JKEcRMlGEzc/maxresdefault.jpg",
+        "demoURL": "",
+        "projectURL": "https://youtu.be/JKEcRMlGEzc"
+      }
+    ],
+    "audio": [
+      {
+        "title": "SoundCloud Profile",
+        "body": "My SoundCloud profile containing several mixtapes of various genres.",
+        "image": "https://i1.sndcdn.com/artworks-MAwBGtbdm9gnnUOX-5CRzyA-t500x500.jpg",
+        "demoURL": "",
+        "projectURL": "https://soundcloud.com/ezer-angeles/sets/among-us-remixtape?si=bab6f89978fe40ce8c5d4e482e12cd96&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+      }
+    ],
+    "software": [
+      {
+        "title": "La Lista",
+        "body": "A web app designed to assist musicians in church with viewing chord sheets.",
+        "image": "",
+        "demoURL": "https://lalista.site/",
+        "projectURL": ""
+      },
+      {
+        "title": "Primera Baptist Church Website",
+        "body": "A church website made for a local church located in San Jose, CA.",
+        "image": "https://static1.squarespace.com/static/58dc9f8c20099e17a84e128e/t/608c7a10527c290aeb2f4e68/1619819024281/new_church.jpg",
+        "demoURL": "https://www.primerabaptist.org/",
+        "projectURL": ""
+      },
+      {
+        "title": "Students First Center Mobile App",
+        "body": "A university app that focuses on providing students with the information they need.",
+        "image": "https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/29/e2/6e/29e26e0f-e738-04ca-9b69-1bce5d0032be/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp",
+        "demoURL": "",
+        "projectURL": "https://apps.apple.com/us/app/sfc-mobile-app/id1458921543"
+      },
+      {
+        "title": "Healthy Host",
+        "body": "A mobile app that focuses on providing patients with the information they need from their health care providers, while removing the language barrier.",
+        "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/4f/ac/3d/4fac3d5d-6509-5ff5-3762-3e62be704ef1/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-85-220.png/246x0w.webp",
+        "demoURL": "",
+        "projectURL": "https://apps.apple.com/us/app/healthy-host/id1462966532"
+      }
+    ]
+  }

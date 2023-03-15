@@ -1,19 +1,52 @@
 import { motion } from "framer-motion";
 import Stylesheet from "reactjs-stylesheet";
 import computer from "../data/images/computer.png";
+import phone from "../data/images/phone.png";
+import tablet from "../data/images/tablet.png";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import CrossfadeImage from "react-crossfade-image";
+import { useState, useEffect, useRef } from "react";
 
 const FullName = () => {
+  const xtraSmallSize = useMediaQuery("(min-width:600px)");
+  const [imageIndex, setImageIndex] = useState(0);
+  const images = [computer, phone, tablet];
+  const counter = useRef(0);
+
+  useEffect(() => {
+    setInterval(() => {
+      if (counter.current === images.length - 1) {
+        counter.current = 0;
+        setImageIndex(0);
+      } else {
+        counter.current += 1;
+        setImageIndex(counter.current);
+      }
+    }, 4000);
+
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <>
       <center>
-        <img
+        <div
           style={{
             maxWidth: 400,
-            paddingTop: "40px",
+            marginTop: "40px",
+            marginLeft: "20px",
+            marginRight: "20px",
           }}
-          src={computer}
-          alt="_Computer"
-        />
+        >
+          <CrossfadeImage
+            style={{
+              width: "100%",
+            }}
+            src={images[imageIndex]}
+            duration={500}
+            timingFunction={"ease-out"}
+          />
+        </div>
       </center>
       <motion.div
         initial={{ opacity: 1, y: -200, scale: 0, rotateX: 0 }}
@@ -25,10 +58,26 @@ const FullName = () => {
           className="full-name"
           style={{
             fontFamily: "Press Start 2P",
-            fontSize: "60px",
+            fontSize: xtraSmallSize ? "60px" : "40px",
           }}
         >
           Ezer Angeles
+        </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        style={{ marginBottom: "50px" }}
+      >
+        <p
+          style={{
+            fontSize: xtraSmallSize ? "20px" : "15px",
+            color: "white",
+            textAlign: "center",
+          }}
+        >
+          One computer, endless possibilities.
         </p>
       </motion.div>
     </>

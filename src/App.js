@@ -15,9 +15,7 @@ const App = () => {
 
   return (
     <HashRouter>
-      <div
-        style={{ display: "flex", flexDirection: "column", height: "100vh" }}
-      >
+      <div style={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
         <FullName />
         <NavBar selected={selected} changeText={changeText} />
         <Routes>
