@@ -6,7 +6,26 @@ const Footer = () => {
     <footer style={styles.footer}>
       <p>
         Site developed by Ezer Angeles. © Ezer Angeles 2022. All rights
-        reserved.
+        reserved. <br />
+        Created with{" "}
+        <a
+          style={{ color: "white", textDecoration: "none" }}
+          href="https://react.dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          ReactJS
+        </a>
+        . Hosted on{" "}
+        <a
+          style={{ color: "white", textDecoration: "none" }}
+          href="https://github.com/eangele1/ezerangeles.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+        .
       </p>
     </footer>
   );
