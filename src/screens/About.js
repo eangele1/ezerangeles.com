@@ -28,15 +28,20 @@ export default function About(props) {
         <Avatar
           alt="Ezer Angeles"
           src={pfp}
-          sx={{ width: 300, height: 300, mt: 4 }}
+          sx={{
+            width: { xs: 150, md: 300 },
+            height: { xs: 150, md: 300 },
+            mt: 4,
+          }}
         />
         <Typography
           variant="h4"
           sx={{
-            fontSize: { sm: 30 },
+            fontSize: { xs: 15, sm: 30 },
             my: 4,
             textAlign: "justify",
             textJustify: "inter-word",
+            padding: "0px 30px",
           }}
         >
           &emsp;I'm just a regular person with a huge mindset of creativity and
