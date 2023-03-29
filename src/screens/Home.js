@@ -21,7 +21,9 @@ const styles = Stylesheet.create({
     padding: "40px 0px",
     color: "white",
     justifyContent: "center",
+    alignItems: "center",
     display: "flex",
+    flexGrow: 1,
   },
 });
 

@@ -14,7 +14,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          ReactJS
+          <i style={{ fontSize: 24 }} class="fa-brands fa-react"></i>
         </a>
         . Hosted on{" "}
         <a
@@ -23,7 +23,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          GitHub
+          <i style={{ fontSize: 24 }} class="fa-brands fa-github"></i>
         </a>
         .
       </p>
