@@ -77,7 +77,7 @@ const FullName = () => {
             textAlign: "center",
           }}
         >
-          One computer, endless possibilities.
+          One computer, numerous possibilities.
         </p>
       </motion.div>
     </>
