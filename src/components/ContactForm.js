@@ -1,10 +1,8 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import InputLabel from "@mui/material/InputLabel";
-
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
@@ -16,8 +14,7 @@ export default function ContactForm() {
   const [isVerified, setVerified] = useState(false);
 
   const sendEmail = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
-
+    e.preventDefault();
     emailjs
       .sendForm(
         "service_1zzwyda",
@@ -34,6 +31,18 @@ export default function ContactForm() {
           alert(error.message);
         }
       );
+  };
+
+  const handleChange = (e, setState) => {
+    setState(e.target.value);
+  };
+
+  const handleRecaptchaChange = () => {
+    setVerified(true);
+  };
+
+  const handleRecaptchaExpired = () => {
+    setVerified(false);
   };
 
   return (
@@ -66,7 +75,7 @@ export default function ContactForm() {
           required
           id="email"
           name="email"
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => handleChange(e, setEmail)}
           value={email}
           margin="normal"
           sx={{ backgroundColor: "white", borderRadius: 1 }}
@@ -91,7 +100,7 @@ export default function ContactForm() {
           required
           id="subject"
           name="subject"
-          onChange={(e) => setSubject(e.target.value)}
+          onChange={(e) => handleChange(e, setSubject)}
           value={subject}
           margin="normal"
           sx={{ backgroundColor: "white", borderRadius: 1 }}
@@ -116,7 +125,7 @@ export default function ContactForm() {
           required
           id="message"
           name="message"
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => handleChange(e, setMessage)}
           value={message}
           margin="normal"
           sx={{ backgroundColor: "white", borderRadius: 1 }}
@@ -126,12 +135,12 @@ export default function ContactForm() {
       <ReCAPTCHA
         ref={recaptchaRef}
         sitekey="6Ld_7PokAAAAADcN4HUKS8IbBdJz1vYbITN2nBJy"
-        onChange={() => setVerified(true)}
-        onExpired={() => setVerified(false)}
+        onChange={handleRecaptchaChange}
+        onExpired={handleRecaptchaExpired}
         style={{ margin: "20px 0px" }}
       />
       {isVerified && email && subject && message && (
-        <Button onClick={(e) => sendEmail(e)} type="submit" variant="contained">
+        <Button onClick={sendEmail} type="submit" variant="contained">
           Submit
         </Button>
       )}
